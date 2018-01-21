@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<!-- 移动端的视口 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<title>天气APP</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery3.2.1.min.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<!-- 第一个模块 当前天气情况 开始 -->
+    <div class="first">
+    	<div class="pos"></div>
+    	<div class="air">
+    		<h4>空气</h4>
+    		<h5></h5>
+    	</div>
+    	<div class="title1"></div>
+    	<div class="title2"></div>
+    	<div class="title3">
+    		<span class="wind_der"></span>
+    		<span class="wind_level"></span>
+    	</div>
+    	<div class="title4">你若安好，便是晴天</div>
+    </div>
+<!-- 第一个模块结束 -->
+<!-- 第二个模块  今天和明天 开始 -->
+	<div class="second">
+		<div class="today">
+			<div class="top">
+				<div class="todaytext">今天</div>
+				<div class="tem">
+					<span class="height">2°</span>
+					<span class="lower">-11°</span>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="con">晴转多云</div>
+				<div class="conpic"></div>
+			</div>
+		</div>
+		<div class="tomorrow">
+		    <div class="top">
+				<div class="tomorrowtext">明天</div>
+				<div class="tem">
+					<span class="height">3°</span>
+					<span class="lower">-13°</span>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="con">晴</div>
+				<div class="conpic tomorrow_icon"></div>
+			</div>
+		</div>
+	</div>
+<!-- 第二个模块结束 -->
+<!-- 第三个模块 24小时天气预报 开始 -->
+	<div class="third">
+		<div class="wrap">
+			<!-- <div class="box">
+				<div class="time">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="icon"></div>
+				<div class="timeTem">1°</div>
+			</div> -->
+		</div>
+	</div>
+<!-- 第三个模块结束 -->
+<!-- 第四个模块 未来7天天气预报 开始 -->
+    <div class="fourth">
+    	<div class="day">
+    	<!-- 	<div class="box">
+    			<div class="date">
+    				<span>01/15</span>
+    			</div>
+    			<div class="weather">多云</div>
+    			<div class="photo"></div>
+    			<div class="heightr">3°</div>
+    			<div class="lower">-12°</div>
+    			<div class="wind">西北风</div>
+    			<div class="rank">3级</div>
+
+    		</div> -->
+    	
+    	</div>
+    </div>
+<!-- 第四个模块结束 -->
+<!-- 第五个模块 温馨提示 开始 -->
+    <div class="fifth">
+    	<div class="top">
+    		    <div class="rainy">
+    		    	<div class="rainy0"></div>
+    		    	<div class="rainy1">不带伞</div>
+    		    	<div class="rainy2">雨伞</div>
+    		    </div>
+    		    <div class="cold">
+    		    	<div class="cold0"></div>
+    		    	<div class="cold1">冷</div>
+    		    	<div class="cold2">穿衣</div>
+    		    </div>
+    		    <div class="sundy">
+    		    	<div class="sundy0"></div>
+    		    	<div class="sundy1">较弱</div>
+    		    	<div class="sundy2">防晒</div>
+    		    </div>
+    		    <div class="body">
+    		    	<div class="body0"></div>
+    		    	<div class="body1">较易发</div>
+    		    	<div class="body2">感冒</div>
+    		    </div>
+    	</div>
+    	<div class="bottom">
+    			<div class="sport">
+    				<div class="sport0"></div>
+    				<div class="sport1">较不易</div>
+    				<div class="sport2">运动</div>
+    			</div>
+    			<div class="car">
+    				<div class="car0"></div>
+    				<div class="car1">易适宜</div>
+    				<div class="car2">洗车</div>
+    			</div>
+    			<div class="fish">
+    				<div class="fish0"></div>
+    				<div class="fish1">不宜</div>
+    				<div class="fish2">钓鱼</div>
+    			</div>
+    			<div class="transport">
+    				<div class="transport0"></div>
+    				<div class="transport1">良好</div>
+    				<div class="transport2">交通</div>
+    			</div>
+    	</div>
+    </div>
+<!-- 第五个模块结束 -->
+<!-- 城市搜索模块开始 -->
+     <div class="city">
+     	<div class="search">
+     		<input type="text" class="searchBox" placeholder="请输入要搜索的城市名称">
+     		<div class="button">取消</div>
+     	</div>
+     	<div class="citys">
+     	    <div class="title">当前定位</div>
+     		<div class="con">
+     		    <div class="box">太原</div>
+     		</div>
+     	    <div class="title">历史记录</div>
+     		<div class="con">
+     			<div class="box">太原</div>
+     			<div class="box">阳泉</div>
+     			<div class="box">大连</div>
+     			<div class="box">烟台</div>
+     		</div>
+     		<div class="title">热门城市</div>
+     		<div class="con">
+     			<div class="box">上海</div>
+     			<div class="box">北京</div>
+     			<div class="box">广州</div>
+     			<div class="box">天津</div>
+     			<div class="box">大连</div>
+     			<div class="box">青岛</div>     			
+     		</div>
+     		<div class="title">山西省</div>
+     		<div class="con">
+     			<div class="box">太原</div>
+     			<div class="box">阳泉</div>
+     			<div class="box">朔州</div>
+     			<div class="box">晋城</div>
+     			<div class="box">临汾</div>
+     			<div class="box">长治</div>
+     			<div class="box">大同</div>
+     			<div class="box">吕梁</div>
+     			<div class="box">晋中</div>     			
+     		</div>
+     	</div>
+     </div>
+</body>
+</html>
